@@ -9,16 +9,39 @@
   display: inline-block;
 }
 
-.reload{
+.reload {
   display: flex;
   justify-content: center;
   padding-top: 25px;
 }
 
-@media (max-width: 1015px){
-  .header{
+@media (max-width: 1015px) {
+  .header {
     font-size: 5rem;
     text-shadow: 3px 0 #232931;
+  }
+}
+
+@media (max-width: 600px) {
+  .header {
+    font-size: 2rem;
+    text-shadow: 1px 0 #232931;
+  }
+
+  .dice {
+    width: 100%;
+  }
+
+  .player {
+    font-size: 1.5rem;
+  }
+
+  .img1 {
+    width: 30%;
+  }
+
+  .img2 {
+    width: 30%;
   }
 }
 
@@ -40,7 +63,7 @@ img {
   width: 80%;
 }
 
-button{
+button {
   background-color: #4ECCA3;
   border: 1px solid black;
   color: #fff;
