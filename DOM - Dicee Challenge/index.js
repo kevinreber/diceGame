@@ -22,14 +22,19 @@ var image2 = document.querySelectorAll('img')[1].setAttribute('src', randomImage
 
 //select h1 text
 var diceResult = document.querySelector('h1');
+//change button text
+var buttonText = document.querySelector('button');
 
 //name winner
 if(randomNumber1 === randomNumber2){
   diceResult.innerHTML = '🚩 Draw! 🚩';
+  buttonText.innerHTML = 'Play Again?';
 }
 if(randomNumber1 > randomNumber2){
   diceResult.innerHTML = '🚩 Player1 wins!';
+  buttonText.innerHTML = 'Play Again?';
 }
 if(randomNumber1 < randomNumber2){
   diceResult.innerHTML = 'Player2 wins! 🚩';
+  buttonText.innerHTML = 'Play Again?';
 }
